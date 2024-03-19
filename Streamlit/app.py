@@ -36,8 +36,8 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 # Feature inputs
-tab1, tab2, tab3, tab4 ,tab5 = st.tabs(["🛬 Temel Uçuş Bilgileri", "💺 Uçuş İçi Hizmet",
-                                  "🧳 Operasyonel Hizmet", "🧑🏻‍💻 Online Hizmet", "📩 Submit"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🛬 Temel Uçuş Bilgileri", "💺 Uçuş İçi Hizmet",
+                                        "🧳 Operasyonel Hizmet", "🧑🏻‍💻 Online Hizmet", "📩 Submit"])
 
 tab1col1, tab1col2 = tab1.columns(2)
 tab1col3, tab1col4 = tab1.columns(2)
