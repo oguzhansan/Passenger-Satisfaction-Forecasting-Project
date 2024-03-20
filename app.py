@@ -159,11 +159,20 @@ with tab2:
 with tab3:
     col5, col6 = st.columns(2)
 
+    Baggage_handling = tab3.slider("Baggage Handling 🧳", 1, 5,
+                                   help="Baggage handling", step=1)
+
+    col7, col8 = st.columns(2)
+
+
     with col5:
         Departure_Arrival_time_convenient = st.slider("Departure Arrival Time 🕙📅", 0, 5,
                                                       help="Departure/arrival time convenient level", step=1)
         Cleanliness = st.slider("Cleanliness ✨", 0, 5,
                                 help="Airplane cleanliness", step=1)
+
+
+    with col7:
         Departure_Delay_in_Minutes = st.number_input("Departure Delay in Minutes 🛫", 0, 10000,
                                                      help="Departure delay.", step=1)
     if Departure_Delay_in_Minutes < 0:
@@ -171,15 +180,16 @@ with tab3:
     elif Departure_Delay_in_Minutes > 1128:
         Departure_Delay_in_Minutes = 1128
 
+
+
     with col6:
         Gate_location = st.slider("Gate Location 🏛️", 0, 5,
                                   help="Level of availible with the gate location", step=1)
         On_board_service = st.slider("On Board Service ✅", 0, 5,
                                      help="Flight satisfaction with on-board service", step=1)
-    Baggage_handling = st.slider("Baggage Handling 🧳", 1, 5,
-                                 help="Baggage handling", step=1)
 
-    with col6:
+
+    with col8:
         Arrival_Delay_in_Minutes = st.number_input("Arrival Delay in Minutes 🛬", 0, 10000,
                                                    help="Arrival delay.", step=1)
     if Arrival_Delay_in_Minutes < 0:
@@ -187,11 +197,12 @@ with tab3:
     elif Arrival_Delay_in_Minutes > 1115:
         Arrival_Delay_in_Minutes = 1115
 
+
 with tab4:
     Ease_of_Online_booking = st.slider("Ease of Online Booking 🔍", 0, 5, help="Easy online booking rate", step=1)
     Online_boarding = st.slider("Online Boarding 🎟", 0, 5, help="User friendly online boarding", step=1)
     Checkin_service = st.slider("Check-in Service 🙋🏻‍♂️", 0, 5, help="User friendly checkin service", step=1)
-    col7, col8 = st.columns(2)
+    col9, col10 = st.columns(2)
 
 Gender = gendera[Gender]
 Customer_Type = Customer_Typea[Customer_Type]
@@ -199,7 +210,7 @@ Type_of_Travel = Type_of_Travela[Type_of_Travel]
 Class = Classa[Class]
 
 with tab4:
-    if col7.button("PREDICT"):
+    if col9.button("PREDICT"):
 
         fd = pd.DataFrame({'Gender': [Gender],
                            'Customer Type': [Customer_Type],
@@ -243,13 +254,13 @@ with tab4:
 
         if pred[0] == 0:
             with tab4:
-                col8.markdown(
+                col10.markdown(
                     f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
                     unsafe_allow_html=True)
 
         else:
             with tab4:
-                col8.markdown(
+                col10.markdown(
                     f'<img src="data:image/gif;base64,{data_url2}" alt="cat gif">',
                     unsafe_allow_html=True)
 
