@@ -3,12 +3,10 @@ import streamlit as st
 from function import *
 from lightgbm import LGBMClassifier
 
-
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="architects/airplane.ico")
 
-
-#Background Style Image and HTML
+# Background Style Image and HTML
 img = get_img_as_base64("./architects/background.jpg")
 page_bg_img = f"""
 <style>
@@ -46,8 +44,7 @@ border-radius: 16px;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
-#Page Title
+# Page Title
 st.markdown("""
     <style>
         .title {
@@ -78,9 +75,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
-
-
-
 # Feature Input Screen
 tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____", "_____", "_____", "_____",
                                                                 "✈️ Basic Flight Information",
@@ -88,7 +82,7 @@ tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____"
                                                                 "👷🏻‍♂️ Operational Service",
                                                                 "🧑🏻‍💻 Suitability"])
 
-#Main Screen Ascii and Title
+# Main Screen Ascii and Title
 with (tab0):
     ascii_art = """
     <p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀</p>
@@ -109,11 +103,9 @@ with (tab0):
     st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
 
-
-
-#Feauture Options
+# Feauture Options
 gendera = {" Male 👦🏻 ": "Male",
-           " Female 👩🏻‍🦰" : "Female"}
+           " Female 👩🏻‍🦰": "Female"}
 
 Customer_Typea = {"Loyal Customer 🌟": "Loyal Customer",
                   "Disloyal Customer": "disloyal Customer"}
@@ -124,7 +116,6 @@ Type_of_Travela = {"Business Travel  💼": "Business travel",
 Classa = {"Business": "Business",
           "Eco +": "Eco Plus",
           "Eco": "Eco"}
-
 
 with tab1:
     col1, col2 = st.columns(2)
@@ -149,8 +140,6 @@ with tab1:
     elif Flight_Distance > 4983:
         Flight_Distance = 4983
 
-
-
 with tab2:
     col3, col4 = st.columns(2)
 
@@ -166,7 +155,6 @@ with tab2:
         Leg_room_service = st.slider("Leg Room Service 📏", 0, 5, help="Legroom suitability", step=1)
         Seat_comfort = st.slider("Seat Comfort 💺", 0, 5, help="Seat comfort level", step=1)
         Food_and_drink = st.slider("Food & Drink 🥪🧋", 0, 5, help="Food and drink flavor level", step=1)
-
 
 with tab3:
     col5, col6 = st.columns(2)
@@ -199,11 +187,6 @@ with tab3:
     elif Arrival_Delay_in_Minutes > 1115:
         Arrival_Delay_in_Minutes = 1115
 
-
-
-
-
-
 with tab4:
     Ease_of_Online_booking = st.slider("Ease of Online Booking 🔍", 0, 5, help="Easy online booking rate", step=1)
     Online_boarding = st.slider("Online Boarding 🎟", 0, 5, help="User friendly online boarding", step=1)
@@ -215,15 +198,8 @@ Customer_Type = Customer_Typea[Customer_Type]
 Type_of_Travel = Type_of_Travela[Type_of_Travel]
 Class = Classa[Class]
 
-
-
-
 with tab4:
     if col7.button("PREDICT"):
-
-
-
-
 
         fd = pd.DataFrame({'Gender': [Gender],
                            'Customer Type': [Customer_Type],
@@ -248,17 +224,12 @@ with tab4:
                            'Departure Delay in Minutes': [Departure_Delay_in_Minutes],
                            'Arrival Delay in Minutes': [Arrival_Delay_in_Minutes]})
 
-
         df = pd.read_csv("data.csv")
-
 
         input_df = pred_data(df, fd)
 
-
-
         new_model = joblib.load("lgbm.pkl")
         pred = new_model.predict(input_df)
-
 
         file_ = open("png/dissatisfied.png", "rb")
         contents = file_.read()
@@ -270,18 +241,17 @@ with tab4:
         data_url2 = base64.b64encode(contents).decode("utf-8")
         file_.close()
 
-
         if pred[0] == 0:
             with tab4:
                 col8.markdown(
-                              f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-                              unsafe_allow_html=True)
+                    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+                    unsafe_allow_html=True)
 
         else:
             with tab4:
                 col8.markdown(
-                             f'<img src="data:image/gif;base64,{data_url2}" alt="cat gif">',
-                             unsafe_allow_html=True)
+                    f'<img src="data:image/gif;base64,{data_url2}" alt="cat gif">',
+                    unsafe_allow_html=True)
 
 with open("style/pred.html", "r", encoding="utf-8") as pred:
     pred_html = f"""{pred.read()}"""
