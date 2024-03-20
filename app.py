@@ -5,10 +5,11 @@ from lightgbm import LGBMClassifier
 
 
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
-                   page_icon="artitects/5929224_airplane_earth_global_globe_trave_icon.ico")
+                   page_icon="architects/airplane.ico")
 
 
-img = get_img_as_base64("./artitects/background.jpg")
+#Background Style Image and HTML
+img = get_img_as_base64("./architects/background.jpg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -45,6 +46,8 @@ border-radius: 16px;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+
+#Page Title
 st.markdown("""
     <style>
         .title {
@@ -73,35 +76,42 @@ st.markdown("""
 
     </style>
 """, unsafe_allow_html=True)
-
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
 
 
 
-# Feature inputs
-tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____","_____","_____","_____","_____", "✈️ Basic Flight Information", "👨🏻‍✈️ Airborne Hospitality", "👷🏻‍♂️ Operational Service", "🧑🏻‍💻 Suitability"])
+# Feature Input Screen
+tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____", "_____", "_____", "_____",
+                                                                "✈️ Basic Flight Information",
+                                                                "👨🏻‍✈️ Airborne Hospitality",
+                                                                "👷🏻‍♂️ Operational Service",
+                                                                "🧑🏻‍💻 Suitability"])
 
-
+#Main Screen Ascii and Title
 with (tab0):
-    st.markdown("<p class='a'></p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'></p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠀⠀⠸⡆⠹⡀⣠⢤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡧⢤⡄⠀⠀⠀⠀⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠀⠀⠀⡧⢄⣹⣅⣜⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⢹⠚⠃⠀⠀⠀⠀⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⣀⠴⢒⣉⡹⣶⣤⣀⡉⠉⠒⠒⠒⠤⠤⣀⣀⣀⠇⠀⠀⢸⠠⣄⠀⠀⠀⠀⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠈⠉⠁⠀⠀⠀⠉⠒⠯⣟⣲⠦⣤⣀⡀⠀⠀⠈⠉⠉⠉⠛⠒⠻⢥⣀⠀⠀⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣲⡬⠭⠿⢷⣦⣤⢄⣀⠀⠀⠚⠛⠛⠓⢦⡀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠀⠀⠀⠀⠀⠀⢀⣀⠤⠴⠚⠉⠁⠀⠀⠀⠀⣀⣉⡽⣕⣯⡉⠉⠉⠑⢒⣒⡾</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠀⣀⡠⠴⠒⠉⠉⠀⢀⣀⣀⠤⡤⢶⣶⣋⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⣖⣉⣁⣠⠤⠶⡶⡶⢍⡉⠀⠀⠀⠙⠒⠯⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>", unsafe_allow_html=True)
-    st.markdown("<p class='a'>⠀⠁⠀⠀⠀⠀⠑⢦⣯⠇                       </p>", unsafe_allow_html=True)
+    ascii_art = """
+    <p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀⠸⡆⠹⡀⣠⢤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡧⢤⡄⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀⠀⡧⢄⣹⣅⣜⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⢹⠚⠃⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⣀⠴⢒⣉⡹⣶⣤⣀⡉⠉⠒⠒⠒⠤⠤⣀⣀⣀⠇⠀⠀⢸⠠⣄⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠈⠉⠁⠀⠀⠀⠉⠒⠯⣟⣲⠦⣤⣀⡀⠀⠀⠈⠉⠉⠉⠛⠒⠻⢥⣀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣲⡬⠭⠿⢷⣦⣤⢄⣀⠀⠀⠚⠛⠛⠓⢦⡀⠀</p>
+    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⢀⣀⠤⠴⠚⠉⠁⠀⠀⠀⠀⣀⣉⡽⣕⣯⡉⠉⠉⠑⢒⣒⡾⠀</p>
+    <p class='a'>⠀⠀⣀⡠⠴⠒⠉⠉⠀⢀⣀⣀⠤⡤⢶⣶⣋⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀</p>
+    <p class='a'>⣖⣉⣁⣠⠤⠶⡶⡶⢍⡉⠀⠀⠀⠙⠒⠯⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠁⠀⠀⠀⠀⠑⢦⣯⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    """
+
+    st.markdown(ascii_art, unsafe_allow_html=True)
     st.markdown("<p class='a'></p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
 
 
+
+#Feauture Options
 gendera = {" Male 👦🏻 ": "Male",
            " Female 👩🏻‍🦰" : "Female"}
 
@@ -120,7 +130,8 @@ with tab1:
     col1, col2 = st.columns(2)
 
     with col1:
-        Gender = st.radio("Gender", list(gendera.keys()), help= "Passenger Sex", horizontal=True)
+        Gender = st.radio("Gender", list(gendera.keys()),
+                          help="Passenger Sex", horizontal=True)
         Customer_Type = st.radio("Customer Type", list(Customer_Typea.keys()), help="Passenger Type", horizontal=True)
         Age = st.number_input("Your Age", 0, 120, help="The actual age of the passenger", step=1)
     if Age < 7:
@@ -129,7 +140,8 @@ with tab1:
         Age = 85
 
     with col2:
-        Type_of_Travel = st.radio("Travel Type", list(Type_of_Travela.keys()), help="The purpose of the passenger's flight", horizontal=True)
+        Type_of_Travel = st.radio("Travel Type", list(Type_of_Travela.keys()),
+                                  help="The purpose of the passenger's flight", horizontal=True)
         Class = st.radio("Fare Class", list(Classa.keys()), help="Ticket Type", horizontal=True)
         Flight_Distance = st.number_input("Distance", 0, 10000, help="Distance of Flight", step=1)
     if Flight_Distance < 31:
@@ -143,9 +155,12 @@ with tab2:
     col3, col4 = st.columns(2)
 
     with col3:
-        Inflight_service = st.slider("Inflight Service 👨🏻‍💼", 0, 5, help="Level of satisfaction with inflight service", step=1)
-        Inflight_entertainment = st.slider("Inflight Entertainment 🎮🎧", 0, 5, help="Quality of Inflight entertainment system", step=1)
-        Inflight_wifi_service = st.slider("Wifi Service ᯤ", 0, 5, help="Satisfaction level with Wi-Fi service on board", step=1)
+        Inflight_service = st.slider("Inflight Service 👨🏻‍💼", 0, 5,
+                                     help="Level of satisfaction with inflight service", step=1)
+        Inflight_entertainment = st.slider("Inflight Entertainment 🎮🎧", 0, 5,
+                                           help="Quality of Inflight entertainment system", step=1)
+        Inflight_wifi_service = st.slider("Wifi Service ᯤ", 0, 5,
+                                          help="Satisfaction level with Wi-Fi service on board", step=1)
 
     with col4:
         Leg_room_service = st.slider("Leg Room Service 📏", 0, 5, help="Legroom suitability", step=1)
@@ -157,16 +172,36 @@ with tab3:
     col5, col6 = st.columns(2)
 
     with col5:
-        Departure_Arrival_time_convenient = st.slider("Departure Arrival Time 🕙📅", 0, 5, help="Departure/arrival time convenient level", step=1)
-        Departure_Delay_in_Minutes = st.slider("Departure Delay in Minutes 🛫", 0, 5, help="Departure delay.", step=1)
-        Arrival_Delay_in_Minutes = st.slider("Arrival Delay in Minutes 🛬", 0, 5, help="Arrival delay.", step=1)
+        Departure_Arrival_time_convenient = st.slider("Departure Arrival Time 🕙📅", 0, 5,
+                                                      help="Departure/arrival time convenient level", step=1)
+        Cleanliness = st.slider("Cleanliness ✨", 0, 5,
+                                help="Airplane cleanliness", step=1)
+        Departure_Delay_in_Minutes = st.number_input("Departure Delay in Minutes 🛫", 0, 10000,
+                                                     help="Departure delay.", step=1)
+    if Departure_Delay_in_Minutes < 0:
+        Departure_Delay_in_Minutes = 0
+    elif Departure_Delay_in_Minutes > 1128:
+        Departure_Delay_in_Minutes = 1128
 
     with col6:
-        Gate_location = st.slider("Gate Location 🏛️", 0, 5, help="Level of availible with the gate location", step=1)
-        On_board_service = st.slider("On Board Service ✅", 0, 5, help="Flight satisfaction with on-board service", step=1)
-        Baggage_handling = st.slider("Baggage Handling 🧳", 1, 5, help="Baggage handling", step=1)
+        Gate_location = st.slider("Gate Location 🏛️", 0, 5,
+                                  help="Level of availible with the gate location", step=1)
+        On_board_service = st.slider("On Board Service ✅", 0, 5,
+                                     help="Flight satisfaction with on-board service", step=1)
+    Baggage_handling = st.slider("Baggage Handling 🧳", 1, 5,
+                                 help="Baggage handling", step=1)
 
-    Cleanliness = st.slider("Cleanliness ✨", 0, 5, help="Airplane cleanliness", step=1)
+    with col6:
+        Arrival_Delay_in_Minutes = st.number_input("Arrival Delay in Minutes 🛬", 0, 10000,
+                                                   help="Arrival delay.", step=1)
+    if Arrival_Delay_in_Minutes < 0:
+        Arrival_Delay_in_Minutes = 0
+    elif Arrival_Delay_in_Minutes > 1115:
+        Arrival_Delay_in_Minutes = 1115
+
+
+
+
 
 
 with tab4:
