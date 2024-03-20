@@ -1,7 +1,7 @@
 import joblib
 import streamlit as st
 from function import *
-
+from lightgbm import LGBMClassifier
 
 
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",

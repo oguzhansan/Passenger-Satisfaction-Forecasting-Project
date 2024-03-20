@@ -2,7 +2,7 @@ import base64
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-
+from lightgbm import LGBMClassifier
 
 def pred_data(df, df_input):
     def label_encoder(dataframe, cat_cols):
