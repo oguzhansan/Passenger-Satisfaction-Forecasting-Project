@@ -6,11 +6,6 @@ from function import *
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="artitects/5929224_airplane_earth_global_globe_trave_icon.ico")
 
-def get_img_as_base64(file):
-    with open(file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
 
 img = get_img_as_base64("./artitects/background.jpg")
 page_bg_img = f"""
