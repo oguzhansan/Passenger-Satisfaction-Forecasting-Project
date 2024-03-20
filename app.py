@@ -7,7 +7,7 @@ st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="artitects/5929224_airplane_earth_global_globe_trave_icon.ico")
 
 
-img = get_img_as_base64("./artitects/background.jpg")
+img = get_img_as_base64("./Streamlit/artitects/background.jpg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
