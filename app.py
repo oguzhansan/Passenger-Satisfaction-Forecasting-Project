@@ -3,8 +3,6 @@ import streamlit as st
 from function import *
 from lightgbm import LGBMClassifier
 
-
-
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="architects/airplane.ico")
 
@@ -166,13 +164,11 @@ with tab3:
 
     col7, col8 = st.columns(2)
 
-
     with col5:
         Departure_Arrival_time_convenient = st.slider("Departure Arrival Time 🕙📅", 0, 5,
                                                       help="Departure/arrival time convenient level", step=1)
         Cleanliness = st.slider("Cleanliness ✨", 0, 5,
                                 help="Airplane cleanliness", step=1)
-
 
     with col7:
         Departure_Delay_in_Minutes = st.number_input("Departure Delay in Minutes 🛫", 0, 10000,
@@ -182,14 +178,11 @@ with tab3:
     elif Departure_Delay_in_Minutes > 1128:
         Departure_Delay_in_Minutes = 1128
 
-
-
     with col6:
         Gate_location = st.slider("Gate Location 🏛️", 0, 5,
                                   help="Level of availible with the gate location", step=1)
         On_board_service = st.slider("On Board Service ✅", 0, 5,
                                      help="Flight satisfaction with on-board service", step=1)
-
 
     with col8:
         Arrival_Delay_in_Minutes = st.number_input("Arrival Delay in Minutes 🛬", 0, 10000,
@@ -199,12 +192,12 @@ with tab3:
     elif Arrival_Delay_in_Minutes > 1115:
         Arrival_Delay_in_Minutes = 1115
 
-
 with tab4:
     Ease_of_Online_booking = st.slider("Ease of Online Booking 🔍", 0, 5, help="Easy online booking rate", step=1)
     Online_boarding = st.slider("Online Boarding 🎟", 0, 5, help="User friendly online boarding", step=1)
     Checkin_service = st.slider("Check-in Service 🙋🏻‍♂️", 0, 5, help="User friendly checkin service", step=1)
-    col9, col10 = st.columns(2)
+
+    col9, col10, col11, col12 = st.columns(4)
 
 Gender = gendera[Gender]
 Customer_Type = Customer_Typea[Customer_Type]
