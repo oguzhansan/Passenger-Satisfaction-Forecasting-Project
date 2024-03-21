@@ -84,21 +84,7 @@ tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____"
 
 # Main Screen Ascii and Title
 with (tab0):
-    ascii_art = """
-    <p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⠸⡆⠹⡀⣠⢤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡧⢤⡄⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⠀⡧⢄⣹⣅⣜⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⢹⠚⠃⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⣀⠴⢒⣉⡹⣶⣤⣀⡉⠉⠒⠒⠒⠤⠤⣀⣀⣀⠇⠀⠀⢸⠠⣄⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠈⠉⠁⠀⠀⠀⠉⠒⠯⣟⣲⠦⣤⣀⡀⠀⠀⠈⠉⠉⠉⠛⠒⠻⢥⣀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣲⡬⠭⠿⢷⣦⣤⢄⣀⠀⠀⠚⠛⠛⠓⢦⡀⠀</p>
-    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⢀⣀⠤⠴⠚⠉⠁⠀⠀⠀⠀⣀⣉⡽⣕⣯⡉⠉⠉⠑⢒⣒⡾⠀</p>
-    <p class='a'>⠀⠀⣀⡠⠴⠒⠉⠉⠀⢀⣀⣀⠤⡤⢶⣶⣋⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀</p>
-    <p class='a'>⣖⣉⣁⣠⠤⠶⡶⡶⢍⡉⠀⠀⠀⠙⠒⠯⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠁⠀⠀⠀⠀⠑⢦⣯⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    """
-
-    st.markdown(ascii_art, unsafe_allow_html=True)
-    st.markdown("<p class='a'></p>", unsafe_allow_html=True)
+    st.image("./png/a2.png")
     st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
@@ -249,13 +235,13 @@ with tab4:
 
         if pred[0] == 0:
             with tab4:
-                col10.markdown(
+                tab4.markdown(
                     f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
                     unsafe_allow_html=True)
 
         else:
             with tab4:
-                col10.markdown(
+                tab4.markdown(
                     f'<img src="data:image/gif;base64,{data_url2}" alt="cat gif">',
                     unsafe_allow_html=True)
 
