@@ -223,27 +223,13 @@ with tab4:
         new_model = joblib.load("lgbm.pkl")
         pred = new_model.predict(input_df)
 
-        file_ = open("png/dissatisfied.png", "rb")
-        contents = file_.read()
-        data_url = base64.b64encode(contents).decode("utf-8")
-        file_.close()
-
-        file_ = open("png/satisfied.png", "rb")
-        contents = file_.read()
-        data_url2 = base64.b64encode(contents).decode("utf-8")
-        file_.close()
-
         if pred[0] == 0:
             with tab4:
-                tab4.markdown(
-                    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-                    unsafe_allow_html=True)
+                tab4.image("png/dissatisfied.png")
 
         else:
             with tab4:
-                tab4.markdown(
-                    f'<img src="data:image/gif;base64,{data_url2}" alt="cat gif">',
-                    unsafe_allow_html=True)
+                tab4.image("png/satisfied.png")
 
 with open("style/pred.html", "r", encoding="utf-8") as pred:
     pred_html = f"""{pred.read()}"""
