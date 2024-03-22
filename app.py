@@ -4,10 +4,10 @@ from function import *
 from lightgbm import LGBMClassifier
 
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
-                   page_icon="architects/airplane.ico")
+                   page_icon="images/airplane.ico")
 
 # Background Style Image and HTML
-img = get_img_as_base64("./architects/background.jpg")
+img = get_img_as_base64("./images/background.jpg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -84,7 +84,7 @@ tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____"
 
 # Main Screen Ascii and Title
 with (tab0):
-    st.image("./architects/a2.png")
+    st.image("./images/a2.png")
     st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
@@ -216,21 +216,21 @@ with tab4:
                            'Departure Delay in Minutes': [Departure_Delay_in_Minutes],
                            'Arrival Delay in Minutes': [Arrival_Delay_in_Minutes]})
 
-        df = pd.read_csv("data.csv")
+        df = pd.read_csv("data/data.csv")
 
         input_df = pred_data(df, fd)
 
-        new_model = joblib.load("lgbm.pkl")
+        new_model = joblib.load("model/lgbm.pkl")
         pred = new_model.predict(input_df)
 
         if pred[0] == 0:
             with tab4:
-                tab4.image("architects/dissatisfied.png")
+                tab4.image("images/dissatisfied.png")
 
         else:
             with tab4:
-                tab4.image("architects/satisfied.png")
+                tab4.image("images/satisfied.png")
 
-with open("style/pred.html", "r", encoding="utf-8") as pred:
-    pred_html = f"""{pred.read()}"""
-    st.markdown(pred_html, unsafe_allow_html=True)
+with open("style/footer.html", "r", encoding="utf-8") as pred:
+    footer_html = f"""{pred.read()}"""
+    st.markdown(footer_html, unsafe_allow_html=True)
