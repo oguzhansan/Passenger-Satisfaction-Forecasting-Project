@@ -84,7 +84,7 @@ tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____"
 
 # Main Screen Ascii and Title
 with (tab0):
-    st.image("./png/a2.png")
+    st.image("./architects/a2.png")
     st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
     st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
@@ -225,11 +225,11 @@ with tab4:
 
         if pred[0] == 0:
             with tab4:
-                tab4.image("png/dissatisfied.png")
+                tab4.image("architects/dissatisfied.png")
 
         else:
             with tab4:
-                tab4.image("png/satisfied.png")
+                tab4.image("architects/satisfied.png")
 
 with open("style/pred.html", "r", encoding="utf-8") as pred:
     pred_html = f"""{pred.read()}"""
