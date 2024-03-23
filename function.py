@@ -365,8 +365,6 @@ def bigdats(uploaded):
         if all_data:
             bigData = pd.concat(all_data, ignore_index=True)
             return bigData
-        else:
-            return None
 
 
 
