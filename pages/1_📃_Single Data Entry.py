@@ -82,14 +82,17 @@ st.markdown("""
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
 # Feature Input Screen
-taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["____", "____", "____", "____","✈️ Basic Flight Information",
+taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["____", "____", "____", "____", "✈️ Basic Flight Information",
                                                           "👨🏻‍✈️ Airborne Hospitality",
                                                           "👷🏻‍♂️ Operational Service",
                                                           "🧑🏻‍💻 Suitability"])
 
 # Main Screen Ascii and Title
+
 with (taba):
     ascii_art = """
+    <p class='a'>⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀</p>
     <p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀</p>
     <p class='a'>⠀⠀⠀⠸⡆⠹⡀⣠⢤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡧⢤⡄⠀⠀⠀⠀⠀⠀</p>
     <p class='a'>⠀⠀⠀⠀⡧⢄⣹⣅⣜⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⢹⠚⠃⠀⠀⠀⠀⠀⠀</p>
