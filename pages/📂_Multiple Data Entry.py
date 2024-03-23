@@ -118,3 +118,7 @@ if tab1.button("PREDICTIONS"):
         plt.title('Travel Distribution')
         plt.xticks(rotation=45)
         col2.pyplot(fig4)
+
+with open("style/footer.html", "r", encoding="utf-8") as pred:
+    footer_html = f"""{pred.read()}"""
+    st.markdown(footer_html, unsafe_allow_html=True)
