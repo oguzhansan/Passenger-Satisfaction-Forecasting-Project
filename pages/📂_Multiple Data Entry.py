@@ -19,6 +19,11 @@ background-position: top left;
 background-repeat: no-repeat;
 background-attachment: local;
 }}
+
+[data-testid="stHeader"] {{
+background: rgba(38, 38, 54, 0.3);
+}}
+
 .st-ds {{
     background-color: rgba(38, 39, 48, 0);
 }}
