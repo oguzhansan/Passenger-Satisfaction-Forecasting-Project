@@ -20,6 +20,9 @@ background-repeat: no-repeat;
 background-attachment: local;
 }}
 
+
+
+
 [data-testid="stHeader"] {{
 background: rgba(38, 38, 54, 0.3);
 }}
@@ -45,6 +48,7 @@ border-radius: 16px;
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 # Page Title
 st.markdown("""
@@ -78,17 +82,28 @@ st.markdown("""
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
 # Feature Input Screen
-tab0, tab1, tab2, tab3, tab4, tab5 = st.tabs(["_____", "✈️ Basic Flight Information",
-                                                        "👨🏻‍✈️ Airborne Hospitality",
-                                                        "👷🏻‍♂️ Operational Service",
-                                                        "🧑🏻‍💻 Suitability", "📂 CSV-Predict"])
+taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["____", "____", "____", "____","✈️ Basic Flight Information",
+                                                          "👨🏻‍✈️ Airborne Hospitality",
+                                                          "👷🏻‍♂️ Operational Service",
+                                                          "🧑🏻‍💻 Suitability"])
 
 # Main Screen Ascii and Title
-with (tab0):
-    st.image("./images/a2.png")
-    st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
-    st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
-    st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
+with (taba):
+    ascii_art = """
+    <p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀⠸⡆⠹⡀⣠⢤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡧⢤⡄⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀⠀⡧⢄⣹⣅⣜⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⢹⠚⠃⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⣀⠴⢒⣉⡹⣶⣤⣀⡉⠉⠒⠒⠒⠤⠤⣀⣀⣀⠇⠀⠀⢸⠠⣄⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠀⠈⠉⠁⠀⠀⠀⠉⠒⠯⣟⣲⠦⣤⣀⡀⠀⠀⠈⠉⠉⠉⠛⠒⠻⢥⣀⠀⠀⠀</p>
+    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣲⡬⠭⠿⢷⣦⣤⢄⣀⠀⠀⠚⠛⠛⠓⢦⡀⠀</p>
+    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⢀⣀⠤⠴⠚⠉⠁⠀⠀⠀⠀⣀⣉⡽⣕⣯⡉⠉⠉⠑⢒⣒⡾⠀</p>
+    <p class='a'>⠀⠀⣀⡠⠴⠒⠉⠉⠀⢀⣀⣀⠤⡤⢶⣶⣋⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀</p>
+    <p class='a'>⣖⣉⣁⣠⠤⠶⡶⡶⢍⡉⠀⠀⠀⠙⠒⠯⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <p class='a'>⠁⠀⠀⠀⠀⠑⢦⣯⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    """
+
+    st.markdown(ascii_art, unsafe_allow_html=True)
+
 
 # Feauture Options
 gendera = {" Male 👦🏻 ": "Male",
@@ -236,24 +251,3 @@ with open("style/footer.html", "r", encoding="utf-8") as pred:
     footer_html = f"""{pred.read()}"""
     st.markdown(footer_html, unsafe_allow_html=True)
 
-uploaded_files = tab5.file_uploader("Choose a file", accept_multiple_files=True)
-
-
-bigData = bigdats(uploaded_files)
-
-tab5.write(bigData)
-
-if tab5.button("PREDICTIONS"):
-    bigDataPred = save(bigData)
-
-    new_model = joblib.load("model/lgbm.pkl")
-    pred = new_model.predict(bigDataPred)
-
-    bigData["Predictions"] = pred
-
-    bigData['Predictions'].replace({0: 'neutral or dissatisfied', 1: 'satisfied'}, inplace=True)
-    tab5.write(bigData)
-
-    href = download_excel(bigData)
-    tab5.markdown(f'<a href="{href}" download="dataset.xlsx"><button>Download Excel File</button></a>',
-                  unsafe_allow_html=True)

@@ -328,6 +328,8 @@ def save(bigData):
                 "Checkin service"]) / 15
             df["NEW_PERSONAL_BEHAVIOR"] = (df["On-board service"] + df["Inflight service"]) / 10
 
+            bh = len(bigData)
+
             cat_cols, num_cols, cat_but_car = grab_col_names(df, cat_th=20, car_th=40)
 
             df = label_encoder(df, cat_cols)
@@ -337,7 +339,7 @@ def save(bigData):
 
             X = df.drop(["satisfaction"], axis=1)
 
-            bh = len(bigData)
+
             bigDataPred = X.iloc[-bh:]
 
             return bigDataPred
