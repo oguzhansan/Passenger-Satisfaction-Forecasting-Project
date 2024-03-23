@@ -1,4 +1,7 @@
+from io import BytesIO
+
 import joblib
+import pandas as pd
 import streamlit as st
 from function import *
 from lightgbm import LGBMClassifier
@@ -76,11 +79,10 @@ st.markdown("""
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
 # Feature Input Screen
-tab0, taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["_____", "_____", "_____", "_____", "_____",
-                                                                "✈️ Basic Flight Information",
-                                                                "👨🏻‍✈️ Airborne Hospitality",
-                                                                "👷🏻‍♂️ Operational Service",
-                                                                "🧑🏻‍💻 Suitability"])
+tab0, tab1, tab2, tab3, tab4, tab5 = st.tabs(["_____", "✈️ Basic Flight Information",
+                                                        "👨🏻‍✈️ Airborne Hospitality",
+                                                        "👷🏻‍♂️ Operational Service",
+                                                        "🧑🏻‍💻 Suitability", "📂 CSV-Predict"])
 
 # Main Screen Ascii and Title
 with (tab0):
@@ -234,3 +236,25 @@ with tab4:
 with open("style/footer.html", "r", encoding="utf-8") as pred:
     footer_html = f"""{pred.read()}"""
     st.markdown(footer_html, unsafe_allow_html=True)
+
+uploaded_files = tab5.file_uploader("Choose a file", accept_multiple_files=True)
+
+
+bigData = bigdats(uploaded_files)
+
+tab5.write(bigData)
+
+if tab5.button("PREDICTIONS"):
+    bigDataPred = save(bigData)
+
+    new_model = joblib.load("model/lgbm.pkl")
+    pred = new_model.predict(bigDataPred)
+
+    bigData["Predictions"] = pred
+
+    bigData['Predictions'].replace({0: 'neutral or dissatisfied', 1: 'satisfied'}, inplace=True)
+    tab5.write(bigData)
+
+    href = download_excel(bigData)
+    tab5.markdown(f'<a href="{href}" download="dataset.xlsx"><button>Download Excel File</button></a>',
+                  unsafe_allow_html=True)
