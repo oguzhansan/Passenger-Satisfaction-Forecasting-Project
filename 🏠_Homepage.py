@@ -22,6 +22,9 @@ background-attachment: local;
 
 }}
 
+[data-testid="stHeader"] {{
+background: rgba(38, 38, 54, 0.3);
+}}
 
 
 {{
