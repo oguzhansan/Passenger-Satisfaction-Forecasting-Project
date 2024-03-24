@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe11916-5275-4e9e-9d71-aa30c3df2668" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook/Airlane_Passenger_Satisfaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/Airlane_Passenger_Satisfaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook/Airline_Passenger_Satisfaction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/Airline_Passenger_Satisfaction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook/airline_passenger_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/airline_passenger_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook/data/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/data/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/1__Single Data Entry.py" beforePathEscaped="$PROJECT_DIR$/pages/1_📃_Single Data Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1__Single Data Entry.py" afterPathEscaped="$PROJECT_DIR$/pages/1_📃_Single Data Entry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_Multiple Data Entry.py" beforePathEscaped="$PROJECT_DIR$/pages/📂_Multiple Data Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_Multiple Data Entry.py" afterPathEscaped="$PROJECT_DIR$/pages/📂_Multiple Data Entry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Homepage.py" beforePathEscaped="$PROJECT_DIR$/🏠_Homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/_Homepage.py" afterPathEscaped="$PROJECT_DIR$/🏠_Homepage.py" afterDir="false" />
-    </list>
+    <list default="true" id="bfe11916-5275-4e9e-9d71-aa30c3df2668" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
