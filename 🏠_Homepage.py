@@ -65,3 +65,8 @@ st.image("./images/a2.png")
 st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
 st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
 st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
+
+# Sayfa Footer HTML Kod Uygulaması
+with open("style/footer.html", "r", encoding="utf-8") as pred:
+    footer_html = f"""{pred.read()}"""
+    st.markdown(footer_html, unsafe_allow_html=True)
