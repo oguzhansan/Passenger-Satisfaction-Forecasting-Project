@@ -1,15 +1,11 @@
-from io import BytesIO
-import joblib
-import pandas as pd
 import streamlit as st
 from function import *
-from lightgbm import LGBMClassifier
 
 # Genel Sayfa Ayarları
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
-#Background Resminin Ayarlanması
+# Background Resminin Ayarlanması
 img = get_img_as_base64("./images/background.jpg")
 page_bg_img = f"""
 <style>

@@ -1,15 +1,12 @@
-from io import BytesIO
 import joblib
-import pandas as pd
 import streamlit as st
 from function import *
-from lightgbm import LGBMClassifier
 
 # Genel Sayfa Ayarları
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
-#Background Resminin Ayarlanması
+# Background Resminin Ayarlanması
 img = get_img_as_base64("./images/background.jpg")
 page_bg_img = f"""
 <style>
@@ -240,4 +237,3 @@ with tab4:
 with open("style/footer.html", "r", encoding="utf-8") as pred:
     footer_html = f"""{pred.read()}"""
     st.markdown(footer_html, unsafe_allow_html=True)
-
