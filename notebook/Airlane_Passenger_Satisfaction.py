@@ -74,7 +74,7 @@ pd.set_option('display.width', 500)
 
 
 # Read the train and test CSV files
-df = pd.read_csv("Notebook/data/data.csv")
+df = pd.read_csv("notebook/data/data.csv")
 
 
 ################################################

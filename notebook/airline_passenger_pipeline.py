@@ -336,7 +336,7 @@ def lgbm_model_save(best_models):
 
 
 def main():
-    df = pd.read_csv("Notebook/data/data.csv")
+    df = pd.read_csv("notebook/data/data.csv")
     X, y = airlines_data_prep(df)
     base_models(X, y)
     best_models = hyperparameter_optimization(X, y)

@@ -5,10 +5,11 @@ import streamlit as st
 from function import *
 from lightgbm import LGBMClassifier
 
+# Genel Sayfa Ayarları
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
-# Background Style Image and HTML
+#Background Resminin Ayarlanması
 img = get_img_as_base64("./images/background.jpg")
 page_bg_img = f"""
 <style>
@@ -19,38 +20,20 @@ background-position: center top;
 background-repeat: no-repeat;
 background-attachment: local;
 }}
-
-
-
-
-[data-testid="stHeader"] {{
-background: rgba(38, 38, 54, 0.3);
-}}
-
-
-
-{{
-[data-testid="stVerticalBlockBorderWrapper"]{{
-background-color: rgba(38, 38, 54, 0.3); 
-border-radius: 16px;
-}}
-
-
-.st-ds {{
-    background-color: rgba(38, 39, 48, 0);
-}}
-
-
-[.data-testid="stColorBlock"]{{
-    background-color: rgba(38, 39, 10;
-}}
-
+[data-testid="stHeader"]
+{{background: rgba(38, 38, 54, 0.3);}}
+{{[data-testid="stVerticalBlockBorderWrapper"]
+{{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
+.st-ds 
+{{background-color: rgba(38, 39, 48, 0);}}
+[.data-testid="stColorBlock"]
+{{background-color: rgba(38, 39, 10;}}
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-# Page Title
+# Sayfa Başlığı ve Yazı Stili
 st.markdown("""
     <style>
         .title {
@@ -81,14 +64,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
-# Feature Input Screen
+# Sayfa Düzenine Tabların Eklenmesi
 taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["____", "____", "____", "____", "✈️ Basic Flight Information",
                                                           "👨🏻‍✈️ Airborne Hospitality",
                                                           "👷🏻‍♂️ Operational Service",
                                                           "🧑🏻‍💻 Suitability"])
 
-# Main Screen Ascii and Title
-
+# Ana Ekran Giriş Sayfası
 with (taba):
     ascii_art = """
     <p class='a'>⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀</p>
@@ -108,7 +90,8 @@ with (taba):
     st.markdown(ascii_art, unsafe_allow_html=True)
 
 
-# Feauture Options
+# Kullanıcı Input Girişleri Ekran Tasarımı
+
 gendera = {" Male 👦🏻 ": "Male",
            " Female 👩🏻‍🦰": "Female"}
 
@@ -144,6 +127,12 @@ with tab1:
         Flight_Distance = 31
     elif Flight_Distance > 4983:
         Flight_Distance = 4983
+
+# Girilen Input Ara Kayıt
+Gender = gendera[Gender]
+Customer_Type = Customer_Typea[Customer_Type]
+Type_of_Travel = Type_of_Travela[Type_of_Travel]
+Class = Classa[Class]
 
 with tab2:
     col3, col4 = st.columns(2)
@@ -204,11 +193,8 @@ with tab4:
 
     col9, col10, col11, col12 = st.columns(4)
 
-Gender = gendera[Gender]
-Customer_Type = Customer_Typea[Customer_Type]
-Type_of_Travel = Type_of_Travela[Type_of_Travel]
-Class = Classa[Class]
 
+# Girilen Inputların Kaydı ve Model Sonuçları
 with tab4:
     if col9.button("PREDICT"):
 
@@ -250,6 +236,7 @@ with tab4:
             with tab4:
                 tab4.image("images/satisfied.png")
 
+# Sayfa Footer HTML Kod Uygulaması
 with open("style/footer.html", "r", encoding="utf-8") as pred:
     footer_html = f"""{pred.read()}"""
     st.markdown(footer_html, unsafe_allow_html=True)
