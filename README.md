@@ -4,7 +4,7 @@
 
 At Miuul Airlines, we're embarking on a journey to revolutionize how airlines measure and improve customer satisfaction. By harnessing cutting-edge technologies like machine learning and data analytics, our team is committed to developing predictive models that can accurately forecast passenger satisfaction levels based on a plethora of factors.</a>
 
-<h3 align="center"> What Sets Us Apart? 👯‍♂️ </h1>
+<h3> What Sets Us Apart? 👯‍♂️ </h1>
 
 <p <a> Advanced Data Analytics: We leverage big data to analyze extensive sets of historical customer data, flight details, service quality metrics, and more, to discern patterns and trends influencing passenger satisfaction.
 
