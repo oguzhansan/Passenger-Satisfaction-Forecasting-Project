@@ -1,1 +1,4 @@
+<h1 align="center">✈️ ✈️  About Passenger Satisfaction Forecasting Project with Miuul Airlines  ✈️ ✈️</h1>
+<p align="center"> <a> Welcome to our groundbreaking project aimed at predicting airline satisfaction! In today's rapidly evolving world, customer satisfaction stands as the cornerstone of successful businesses, and the aviation industry is no exception. Understanding and anticipating passengers' needs and expectations is paramount to enhancing their overall experience and fostering continued loyalty.
 
+At Miuul Airlines, we're embarking on a journey to revolutionize how airlines measure and improve customer satisfaction. By harnessing cutting-edge technologies like machine learning and data analytics, our team is committed to developing predictive models that can accurately forecast passenger satisfaction levels based on a plethora of factors.</a>
