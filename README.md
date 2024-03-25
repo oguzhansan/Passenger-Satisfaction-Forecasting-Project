@@ -69,7 +69,7 @@
 
 <p <a> Used Streamlit for creating web application.</a> 
 
-<p <a> Designed an based user interface using Streamlit components, CSS and HTML</a> 
+<p <a> Designed an based user interface using Streamlit components, CSS and HTML.</a> 
 
 <p <a> Tested the complete application to ensure that both the backend and frontend components are functioning correctly.</a> 
 
