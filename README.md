@@ -15,7 +15,7 @@
 
 <a> 🤌 Tailored Solutions: We recognize that each airline operates within a unique landscape with distinct customer demographics and service offerings. Therefore, our approach emphasizes crafting predictive solutions customized to address the specific needs and challenges of each client.</a>
 
-<h3> How It Works? ⚙️ </h3>
+<h2> How It Works? ⚙️ </h2>
 
 <p <a> 🙌 Data Collection: We compile comprehensive datasets covering various facets of airline operations and passenger feedback.</a>
 
@@ -25,7 +25,7 @@
 
 <p <a> 🔑 Evaluation and Refinement: We rigorously evaluate model performance using industry-standard metrics and continually refine them to enhance predictive capabilities.</a>
 
-<h3> Benefits for Airlines ✈️ </h3>
+<h2> Benefits for Airlines ✈️ </h2>
 
 <p <a> 🔓 Enhanced Customer Experience: By accurately predicting passenger satisfaction, airlines can proactively address issues and tailor services to meet customer expectations, ultimately driving higher satisfaction levels and fostering loyalty.</a>
 
