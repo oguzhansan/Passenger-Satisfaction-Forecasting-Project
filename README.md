@@ -124,8 +124,8 @@
 <h3> <b> 🙋‍♀️ Merve Tezcan </h3>
 
 <a target="_blank" href="https://www.linkedin.com/in/merve-tezcan/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"></img></a>
-<a target="_blank" href=""><img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white"></img></a>
-<a target="_blank" href=""><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"></img></a>
+<a target="_blank" href="https://www.kaggle.com/mervetezcan "><img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white"></img></a>
+<a target="_blank" href="https://medium.com/@mrvtzcn36"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"></img></a>
 
 <h3> <b> 🙋‍♂️ Oğuzhan Şan </h3>
 
