@@ -34,7 +34,7 @@
 <p <a> 📢 <b> Strategic Decision-Making:</b> Equipped with actionable insights, airline executives can make informed decisions regarding route planning, fleet management, and service enhancements, driving long-term profitability and growth.</a>
 
 
-<h2 align="center"> Join Us in Shaping the Future of Airline Satisfaction! </h2>
+<h2> Join Us in Shaping the Future of Airline Satisfaction! </h2>
 
   
 <p <a> At Miuul Airlines, we're dedicated to pushing the boundaries of innovation and delivering tangible value to our clients in the aviation industry. Whether you're an airline executive aiming to elevate customer satisfaction or a passenger seeking a smoother travel experience, we invite you to partner with us on this transformative journey.</a>
