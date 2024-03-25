@@ -25,7 +25,7 @@
 
 <p <a> 🔑 <b> Evaluation and Refinement:</b> We rigorously evaluate model performance using industry-standard metrics and continually refine them to enhance predictive capabilities.</a>
 
-<h2> Benefits for Airlines ✈️ </b></h2>
+<h2> <b> Benefits for Airlines ✈️ </b></h2>
 
 <p <a> 🔓 <b> Enhanced Customer Experience:</b> By accurately predicting passenger satisfaction, airlines can proactively address issues and tailor services to meet customer expectations, ultimately driving higher satisfaction levels and fostering loyalty.</a>
 
@@ -43,7 +43,50 @@
 
 <p <a><em> Together, let's soar to new heights of customer satisfaction and excellence in aviation!</em></a>
 
+<h2> <b> 🛠️ Project Steps </b></h2>
 
+<h3> <b> 👷🏻 Backend Development:</b></h3>
+
+<p <a> Used Pandas for data manipulation and analysis. </a> 
+
+<p <a> Leveraged NumPy for numerical operations and array manipulation. </a> 
+
+<p <a> Implemented machine learning algorithms using scikit-learn. </a> 
+
+<p <a> Utilized the 'io' library for handling input/output operations. </a> 
+
+<p <a> Used Matplotlib for creating visualizations. </a> 
+
+<p <a> Implemented image processing using the Pillow library. </a> 
+
+<p <a> Used base64 for encoding and decoding binary image data. </a> 
+
+<h3> <b> 🖥️ Frontend Development:</a> 
+
+<p <a> Used Streamlit for creating web application.</a> 
+
+<p <a> Designed an based user interface using Streamlit components, CSS and Javascript.</a> 
+
+<p <a> Tested the complete application to ensure that both the backend and frontend components are functioning correctly.</a> 
+
+
+<h2> <b> 👩‍🏫How to use  </h2>
+Firstly, enter https://datalinerairlines.streamlit.app/. If the app is asleep due to Streamlit's policy, please wait a few moments for it to wake up.
+
+
+Click to:
+
+
+After accessing the page, you'll find three buttons in the sidebar: Homepage, Single Data Entry and Multiple Data Entry.
+
+
+If you want to work on a single data, select the single data button and start by filling out the form that will appear.
+
+
+After completing the form, navigate to the 'Suitability' tab and click on the designated button, as indicated in the image:
+
+
+This will display your case satisfaction prediction as shown here:
 
 
 
