@@ -27,11 +27,11 @@
 
 <h2> Benefits for Airlines ✈️ </h2>
 
-<p <a> 🔓 Enhanced Customer Experience: By accurately predicting passenger satisfaction, airlines can proactively address issues and tailor services to meet customer expectations, ultimately driving higher satisfaction levels and fostering loyalty.</a>
+<p <a> 🔓<b> Enhanced Customer Experience:</b> By accurately predicting passenger satisfaction, airlines can proactively address issues and tailor services to meet customer expectations, ultimately driving higher satisfaction levels and fostering loyalty.</a>
 
-<p <a> ♻️ Operational Efficiency: Insights derived from our predictive models enable airlines to optimize resource allocation, improve service delivery, and streamline operations, resulting in cost savings and increased competitiveness.</a>
+<p <a> ♻️ <b>Operational Efficiency:</b> Insights derived from our predictive models enable airlines to optimize resource allocation, improve service delivery, and streamline operations, resulting in cost savings and increased competitiveness.</a>
 
-<p <a> 📢 Strategic Decision-Making: Equipped with actionable insights, airline executives can make informed decisions regarding route planning, fleet management, and service enhancements, driving long-term profitability and growth.</a>
+<p <a> 📢  <b>Strategic Decision-Making: </b> Equipped with actionable insights, airline executives can make informed decisions regarding route planning, fleet management, and service enhancements, driving long-term profitability and growth.</a>
 
 
 <h2 align="center"> Join Us in Shaping the Future of Airline Satisfaction! </h2>
