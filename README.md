@@ -1,4 +1,4 @@
-<h1 align="center">✈️ ✈️  About Passenger Satisfaction Forecasting Project with Miuul Airlines  ✈️ ✈️</h1>
+<h2 align="center">✈️ ✈️  About Passenger Satisfaction Forecasting Project with Miuul Airlines  ✈️ ✈️</h1>
 
 <p <a> Welcome to our groundbreaking project aimed at predicting airline satisfaction! In today's rapidly evolving world, customer satisfaction stands as the cornerstone of successful businesses, and the aviation industry is no exception. Understanding and anticipating passengers' needs and expectations is paramount to enhancing their overall experience and fostering continued loyalty. 
 
