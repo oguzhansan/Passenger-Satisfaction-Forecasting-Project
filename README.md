@@ -65,11 +65,11 @@
 <p <a> Used base64 for encoding and decoding binary image data. </a> 
 
 
-<h3> <b> 🖥️ Frontend Development:</a> </h3>
+<h3> <b> 🖥️ Frontend Development: </h3>
 
 <p <a> Used Streamlit for creating web application.</a> 
 
-<p <a> Designed an based user interface using Streamlit components, CSS and Javascript.</a> 
+<p <a> Designed an based user interface using Streamlit components, CSS and HTML</a> 
 
 <p <a> Tested the complete application to ensure that both the backend and frontend components are functioning correctly.</a> 
 
