@@ -1,12 +1,11 @@
 import base64
 import io
-
-
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from lightgbm import LGBMClassifier
 
+# Girilen Input Verisinin Tahminini Bir Dataframe Olarak Döndüren Fonksiyon
 def pred_data(df, df_input):
     def label_encoder(dataframe, cat_cols):
         le = LabelEncoder()
@@ -160,15 +159,16 @@ def pred_data(df, df_input):
 
     X = df.drop(["satisfaction"], axis=1)
 
+    # Inputun Ölçeklenmiş ve Encode Edilmiş Halinin Modele Hazırlanması
     df1 = X.iloc[-1]
 
-    l1 = [float(df1[0]), float(df1[1]), float(df1[2]), float(df1[3]), int(df1[4]), int(df1[5]), int(df1[6]), int(df1[7]),
-          int(df1[8]), int(df1[9]), int(df1[10]), int(df1[11]), int(df1[12]), int(df1[13]), int(df1[14]), int(df1[15]),
-          int(df1[16]), int(df1[17]), int(df1[18]), int(df1[19]), int(df1[20]), int(df1[21]),
-          int(df1[22]), int(df1[23]), int(df1[24]), int(df1[25]), int(df1[26]), int(df1[27]), int(df1[28]),
-          int(df1[29]), int(df1[30]), int(df1[31]), int(df1[32]), int(df1[33])]
+    l1 = [float(df1[0]), float(df1[1]), float(df1[2]), float(df1[3]), int(df1[4]), int(df1[5]),
+          int(df1[6]), int(df1[7]), int(df1[8]), int(df1[9]), int(df1[10]), int(df1[11]), int(df1[12]),
+          int(df1[13]), int(df1[14]), int(df1[15]), int(df1[16]), int(df1[17]), int(df1[18]), int(df1[19]),
+          int(df1[20]), int(df1[21]), int(df1[22]), int(df1[23]), int(df1[24]), int(df1[25]), int(df1[26]),
+          int(df1[27]), int(df1[28]), int(df1[29]), int(df1[30]), int(df1[31]), int(df1[32]), int(df1[33])]
 
-    # Display prediction result
+    # Input Verilerinden Tek Satırlık DataFrame Oluşturma
 
     l2 = np.array(l1).reshape(1, -1)
     input_df = pd.DataFrame(l2)
@@ -176,13 +176,14 @@ def pred_data(df, df_input):
     return input_df
 
 
+# Arka Plan Yükleme Fonksiyonu
 def get_img_as_base64(file):
     with open(file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
 
-
+# Toplu Veri Girişinin Ölçeklenmesi ve Encode Edilmesini Sağlayan Fonksiyon
 def save(bigData):
             def label_encoder(dataframe, cat_cols):
                 le = LabelEncoder()
@@ -344,7 +345,7 @@ def save(bigData):
 
             return bigDataPred
 
-
+# Toplu Veri Yükleme Fonksiyonu
 def bigdats(uploaded):
 
     if uploaded is None:
@@ -369,7 +370,7 @@ def bigdats(uploaded):
 
 
 
-
+# Kullanıcıdan alınan datanın excel formatında indirilmesi için buton oluştuma
 def download_excel(lastdata):
     excel_buffer = io.BytesIO()
 
