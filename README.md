@@ -61,7 +61,7 @@
 
 <p <a> Used base64 for encoding and decoding binary image data. </a> 
 
-<h3> <b> 🖥️ Frontend Development:</a> 
+<h3> <b> 🖥️ Frontend Development:</a> </h3>
 
 <p <a> Used Streamlit for creating web application.</a> 
 
