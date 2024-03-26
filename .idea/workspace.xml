@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe11916-5275-4e9e-9d71-aa30c3df2668" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/1__Single Data Entry.py" beforePathEscaped="$PROJECT_DIR$/pages/1_📃_Single Data Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1__Single Data Entry.py" afterPathEscaped="$PROJECT_DIR$/pages/1_📃_Single Data Entry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_Multiple Data Entry.py" beforePathEscaped="$PROJECT_DIR$/pages/📂_Multiple Data Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_Multiple Data Entry.py" afterPathEscaped="$PROJECT_DIR$/pages/📂_Multiple Data Entry.py" afterDir="false" />
-    </list>
+    <list default="true" id="bfe11916-5275-4e9e-9d71-aa30c3df2668" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +22,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,

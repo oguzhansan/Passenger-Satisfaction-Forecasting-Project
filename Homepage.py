@@ -5,6 +5,8 @@ from function import *
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
+st.sidebar.image("./images/homepage.png")
+
 # Background Resminin Ayarlanması
 img = get_img_as_base64("./images/background.jpg")
 page_bg_img = f"""
@@ -16,21 +18,31 @@ background-position: center top;
 background-repeat: no-repeat;
 background-attachment: local;
 }}
-}}
-{{
-[data-testid="stVerticalBlockBorderWrapper"]{{
-background-color: rgba(38, 38, 54, 0.3); 
-border-radius: 16px;
-}}
-.st-ds {{
-background-color: rgba(38, 39, 48, 0);
-}}
-[.data-testid="stColorBlock"]{{
-background-color: rgba(38, 39, 10;
-}}
+[data-testid="stHeader"]
+{{background: rgba(38, 38, 54, 0.3);}}
+{{[data-testid="stVerticalBlockBorderWrapper"]
+{{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
+.st-ds 
+{{background-color: rgba(38, 39, 48, 0);}}
+[.data-testid="stColorBlock"]
+{{background-color: rgba(38, 39, 10;}}
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Set the width to your desired value
+
+st.markdown(
+    f"""
+    <style>
+        section[data-testid="stSidebar"] {{
+            width: 200px !important; 
+        }}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 # Sayfa Başlığı ve Yazı Stili
 st.markdown("""

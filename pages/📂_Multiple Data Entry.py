@@ -23,6 +23,10 @@ background-attachment: local;
     background-color: rgba(38, 39, 48, 0);
 }}
 
+[data-testid="stHeader"]
+{{background: rgba(38, 38, 54, 0.3);}}
+{{[data-testid="stVerticalBlockBorderWrapper"]
+{{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
 
 [.data-testid="stColorBlock"]{{
     background-color: rgba(38, 39, 10;
@@ -31,13 +35,42 @@ background-attachment: local;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+# Sayfa Başlığı ve Yazı Stili
+st.markdown("""
+    <style>
+        .title {
+            text-align: center;
+            font-family: Yellow peace;
+            font-weight: lighter;
+            color: rgba(43, 45, 49);
+            font-size: 2.5rem;
+            padding-bottom: 20px;
+        }
+        .me {
+            text-align: center;
+            font-family: Yellow peace;
+            color: rgba(43, 45, 49);
+            font-size: 1 rem;
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+""", unsafe_allow_html=True)
+st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
+
 # Sayfa Düzenine Tabların Eklenmesi
-taba, tabb, tabc, tabd, tab1, tab2 = st.tabs(["____", "____", "____", "____", "🗃️ Data Upload & Download",
-                                                                              "‍📊️ Data Analyze"])
+(taba, tabb, tabc, tabd, tabe, tabf, tabg,
+ tabh, tabj, tabk, tabl, tabm, tabn, tab1, tab2) = st.tabs(["____", "____", "____", "____",
+                                                                  "____", "____", "____", "____",
+                                                                  "____", "____", "____", "____",
+                                                                  "____",
+                                                                  "🗃️ Data Upload & Download",
+                                                                  "‍📊️ Data Analyze"])
 
 # Ana Ekran Giriş Sayfası
 taba.image("./images/analyze.png")
-st.sidebar.header("Miuul Airlines R&D")
+st.sidebar.image("./images/multiple.png")
 
 # Veri seti yükleme
 uploaded_files = tab1.file_uploader("Choose a file", accept_multiple_files=True)
