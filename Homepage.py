@@ -1,7 +1,7 @@
 import streamlit as st
 from function import *
 
-# Genel Sayfa Ayarları
+# General Page Settings
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
