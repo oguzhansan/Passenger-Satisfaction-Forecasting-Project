@@ -30,6 +30,20 @@ background-attachment: local;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+# Set the width to your desired value
+
+st.markdown(
+    f"""
+    <style>
+        section[data-testid="stSidebar"] {{
+            width: 200px !important; 
+        }}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 # Sayfa Başlığı ve Yazı Stili
 st.markdown("""
     <style>
