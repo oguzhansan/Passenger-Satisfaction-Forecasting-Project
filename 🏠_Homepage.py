@@ -18,18 +18,14 @@ background-position: center top;
 background-repeat: no-repeat;
 background-attachment: local;
 }}
-}}
-{{
-[data-testid="stVerticalBlockBorderWrapper"]{{
-background-color: rgba(38, 38, 54, 0.3); 
-border-radius: 16px;
-}}
-.st-ds {{
-background-color: rgba(38, 39, 48, 0);
-}}
-[.data-testid="stColorBlock"]{{
-background-color: rgba(38, 39, 10;
-}}
+[data-testid="stHeader"]
+{{background: rgba(38, 38, 54, 0.3);}}
+{{[data-testid="stVerticalBlockBorderWrapper"]
+{{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
+.st-ds 
+{{background-color: rgba(38, 39, 48, 0);}}
+[.data-testid="stColorBlock"]
+{{background-color: rgba(38, 39, 10;}}
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)

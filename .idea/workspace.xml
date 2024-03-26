@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfe11916-5275-4e9e-9d71-aa30c3df2668" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/analyze.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/analyze.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/1__Single Data Entry.py" beforePathEscaped="$PROJECT_DIR$/pages/1_📃_Single Data Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1__Single Data Entry.py" afterPathEscaped="$PROJECT_DIR$/pages/1_📃_Single Data Entry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_Multiple Data Entry.py" beforePathEscaped="$PROJECT_DIR$/pages/📂_Multiple Data Entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_Multiple Data Entry.py" afterPathEscaped="$PROJECT_DIR$/pages/📂_Multiple Data Entry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_Homepage.py" beforePathEscaped="$PROJECT_DIR$/🏠_Homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/_Homepage.py" afterPathEscaped="$PROJECT_DIR$/🏠_Homepage.py" afterDir="false" />
     </list>
@@ -28,6 +26,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,

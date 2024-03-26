@@ -23,6 +23,10 @@ background-attachment: local;
     background-color: rgba(38, 39, 48, 0);
 }}
 
+[data-testid="stHeader"]
+{{background: rgba(38, 38, 54, 0.3);}}
+{{[data-testid="stVerticalBlockBorderWrapper"]
+{{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
 
 [.data-testid="stColorBlock"]{{
     background-color: rgba(38, 39, 10;
