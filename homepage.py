@@ -8,7 +8,7 @@ st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
 # Pages Desing to Side Bar
 show_pages(
     [
-        Page("Homepage.py", "Home", "🏠"),
+        Page("homepage.py", "Home", "🏠"),
         Page("pages/single.py", "Single Data Entry", "📃"),
         Page("pages/multi.py", "Multiple Data Entry", "📂")
     ]
