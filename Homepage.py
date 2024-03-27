@@ -1,9 +1,19 @@
 import streamlit as st
 from function import *
-
+from st_pages import Page, show_pages
 # General Page Settings
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
+
+# Pages Desing to Side Bar
+show_pages(
+    [
+        Page("Homepage.py", "Home", "🏠"),
+        Page("pages/single.py", "Single Data Entry", "📃"),
+        Page("pages/multi.py", "Multiple Data Entry", "📂")
+    ]
+)
+
 
 st.sidebar.image("./images/homepage.png")
 

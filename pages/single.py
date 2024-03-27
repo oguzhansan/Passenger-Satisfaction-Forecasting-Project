@@ -6,7 +6,6 @@ from function import *
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
-
 st.sidebar.image("./images/single.png")
 
 # Background Resminin Ayarlanması

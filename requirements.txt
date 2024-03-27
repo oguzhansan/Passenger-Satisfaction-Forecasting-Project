@@ -6,3 +6,4 @@ scikit_learn==1.4.1.post1
 streamlit==1.31.1
 openpyxl
 matplotlib
+st_pages
