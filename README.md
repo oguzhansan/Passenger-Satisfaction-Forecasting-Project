@@ -1,4 +1,4 @@
-![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen1.png)
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screenmain.png)
 
 <h2 align="center"> <b> ✈️ ✈️  About Passenger Satisfaction Forecasting Project with Miuul Airlines  ✈️ ✈️</b></h2>
 
