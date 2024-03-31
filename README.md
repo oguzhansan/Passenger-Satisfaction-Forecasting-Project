@@ -77,39 +77,34 @@
   
 <p></p> <a> Firstly, enter https://datalinerairlines.streamlit.app/. If the app is asleep due to Streamlit's policy, please wait a few moments for it to wake up. </a> 
 
-![image]()
-
 <p></p> <a> After accessing the page, you'll find three buttons in the sidebar: Homepage, Single Data Entry and Multiple Data Entry. The home button takes you to the home page. Others redirect to the relevant page. </a> 
 
-![image]()
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen2.png) 
 
 <p></p> <a> If you want to work on a single data, select the single data button and start by filling out the form that will appear. </a> 
 
-![image]()
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen3.png) 
 
 <p></p> <a> After completing the form, navigate to the 'Suitability' tab and click on the designated button, as indicated in the image: </a> 
 
-(Foto)
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen4.png) 
 
 <p></p> <a> This will display your case satisfaction prediction as shown here: </a> 
 
-![image]()
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen5.png) 
 
-<p></p> <a> If you want to work on multiple data, select the multiple data button and upload your relevant file: </a> 
+<p></p> <a> If you want to work on multiple data, select the multiple data button and upload your relevant file, and click the Button: </a> 
 
-![image]()
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen6.png) 
 
-<p></p> <a> And click the Button: </a> 
-
-![image]()
 
 <p></p> <a> In the table below you will find the predictions made for each row of your data set. </a> 
 
-![image]()
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen7.png) 
 
 <p></p> <a> After that, if you want to see the graphs of your relevant data set, you can navigate to the 'Data Analysis' tab. </a> 
 
-![image]()
+![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen8.png) 
 
 
 <h2>  👨‍👩‍👧‍👦Team Members:  </h2>
