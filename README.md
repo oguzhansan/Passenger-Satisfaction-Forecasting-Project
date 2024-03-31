@@ -135,4 +135,4 @@
 
 
 <h2>  📺Project Presentation:  </h2>
-![video](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/point.mp4) 
+https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/point.mp4
