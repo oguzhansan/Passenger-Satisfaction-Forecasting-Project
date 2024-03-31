@@ -138,4 +138,7 @@
 
 <video width="360" height="320" controls="controls">
   <source src="https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/point.mp4" type="video/mp4" />
-https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/point.mp4
+
+![Video Açıklaması](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/point.mp4)
+  
+
