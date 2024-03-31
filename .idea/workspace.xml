@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfe11916-5275-4e9e-9d71-aa30c3df2668" name="Changes" comment="file name change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.streamlit/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/.streamlit/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/analyze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/multi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/multi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/single.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/single.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/style/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

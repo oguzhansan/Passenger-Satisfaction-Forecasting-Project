@@ -81,9 +81,7 @@ st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=Tru
 taba.image("./images/Fearless - 1.png")
 
 
-st.sidebar.markdown("<br><br><br><br><br><br><br>"
-                    "<br><br><br><br><br><br><br>"
-                    "<br><br><br><br><br><br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br>", unsafe_allow_html=True)
 st.sidebar.image("./images/b7.png")
 
 # Veri seti yükleme

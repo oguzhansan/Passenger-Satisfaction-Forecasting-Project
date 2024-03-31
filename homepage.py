@@ -14,9 +14,7 @@ show_pages(
     ]
 )
 
-st.sidebar.markdown("<br><br><br><br><br><br><br>"
-                    "<br><br><br><br><br><br><br>"
-                    "<br><br><br><br><br><br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 st.sidebar.image("./images/b7.png")
 

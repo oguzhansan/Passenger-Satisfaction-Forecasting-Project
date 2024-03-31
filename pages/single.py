@@ -6,9 +6,7 @@ from function import *
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
-st.sidebar.markdown("<br><br><br><br><br><br><br>"
-                    "<br><br><br><br><br><br><br>"
-                    "<br><br><br><br><br><br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 st.sidebar.image("./images/b7.png")
 
