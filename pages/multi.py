@@ -9,7 +9,7 @@ st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
 
 
 # Background Resminin Ayarlanması
-img = get_img_as_base64("./images/background.jpg")
+img = get_img_as_base64("./images/Fearless - 7.jpeg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -24,7 +24,7 @@ background-attachment: local;
 }}
 
 [data-testid="stHeader"]
-{{background: rgba(38, 38, 54, 0.3);}}
+{{background: rgba(56,97,142,0.3);}}
 {{[data-testid="stVerticalBlockBorderWrapper"]
 {{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
 
@@ -51,14 +51,14 @@ st.markdown("""
             text-align: center;
             font-family: Yellow peace;
             font-weight: lighter;
-            color: rgba(43, 45, 49);
+            color: rgba(91, 162, 194);
             font-size: 2.5rem;
             padding-bottom: 20px;
         }
         .me {
             text-align: center;
             font-family: Yellow peace;
-            color: rgba(43, 45, 49);
+            color: rgba(94, 78, 207);
             font-size: 1 rem;
             padding: 0;
             margin: 0;
@@ -78,8 +78,13 @@ st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=Tru
                                                                   "‍📊️ Data Analyze"])
 
 # Ana Ekran Giriş Sayfası
-taba.image("./images/analyze.png")
-st.sidebar.image("./images/multiple.png")
+taba.image("./images/Fearless - 1.png")
+
+
+st.sidebar.markdown("<br><br><br><br><br><br><br>"
+                    "<br><br><br><br><br><br><br>"
+                    "<br><br><br><br><br><br>", unsafe_allow_html=True)
+st.sidebar.image("./images/b7.png")
 
 # Veri seti yükleme
 uploaded_files = tab1.file_uploader("Choose a file", accept_multiple_files=True)

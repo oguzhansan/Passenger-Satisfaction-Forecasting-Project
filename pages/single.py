@@ -6,10 +6,14 @@ from function import *
 st.set_page_config(layout="centered", page_title="Dataliners Hava Yolları",
                    page_icon="images/airplane.ico")
 
-st.sidebar.image("./images/single.png")
+st.sidebar.markdown("<br><br><br><br><br><br><br>"
+                    "<br><br><br><br><br><br><br>"
+                    "<br><br><br><br><br><br>", unsafe_allow_html=True)
+
+st.sidebar.image("./images/b7.png")
 
 # Background Resminin Ayarlanması
-img = get_img_as_base64("./images/background.jpg")
+img = get_img_as_base64("./images/Fearless - 7.jpeg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -20,7 +24,7 @@ background-repeat: no-repeat;
 background-attachment: local;
 }}
 [data-testid="stHeader"]
-{{background: rgba(38, 38, 54, 0.3);}}
+{{background: rgba(56,97,142,0.3);}}
 {{[data-testid="stVerticalBlockBorderWrapper"]
 {{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
 .st-ds 
@@ -48,14 +52,14 @@ st.markdown("""
             text-align: center;
             font-family: Yellow peace;
             font-weight: lighter;
-            color: rgba(43, 45, 49);
+            color: rgba(91, 162, 194);
             font-size: 2.5rem;
             padding-bottom: 20px;
         }
         .me {
             text-align: center;
             font-family: Yellow peace;
-            color: rgba(43, 45, 49);
+            color: rgba(94, 78, 207);
             font-size: 1 rem;
             padding: 0;
             margin: 0;
@@ -63,7 +67,7 @@ st.markdown("""
         .a {
             text-align: center;
             font-family: Yellow peace;
-            color: #000000;
+            color: rgba(94, 78, 207);
             padding: 0;
             margin: 0;
         }
@@ -72,6 +76,20 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    .st-f5 { 
+        background: rgb(41,72,149,0.3);
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
 # Sayfa Düzenine Tabların Eklenmesi
 taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["____", "____", "____", "____", "✈️ Basic Flight Information",
                                                           "👨🏻‍✈️ Airborne Hospitality",
@@ -79,23 +97,7 @@ taba, tabb, tabc, tabd, tab1, tab2, tab3, tab4 = st.tabs(["____", "____", "____"
                                                           "🧑🏻‍💻 Suitability"])
 
 # Ana Ekran Giriş Sayfası
-with (taba):
-    ascii_art = """
-    <p class='a'>⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⣖⠲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⠸⡆⠹⡀⣠⢤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡧⢤⡄⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⠀⡧⢄⣹⣅⣜⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⢹⠚⠃⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⣀⠴⢒⣉⡹⣶⣤⣀⡉⠉⠒⠒⠒⠤⠤⣀⣀⣀⠇⠀⠀⢸⠠⣄⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠀⠈⠉⠁⠀⠀⠀⠉⠒⠯⣟⣲⠦⣤⣀⡀⠀⠀⠈⠉⠉⠉⠛⠒⠻⢥⣀⠀⠀⠀</p>
-    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣲⡬⠭⠿⢷⣦⣤⢄⣀⠀⠀⠚⠛⠛⠓⢦⡀⠀</p>
-    <p class='a'>⠀⠀⠀⠀⠀⠀⠀⢀⣀⠤⠴⠚⠉⠁⠀⠀⠀⠀⣀⣉⡽⣕⣯⡉⠉⠉⠑⢒⣒⡾⠀</p>
-    <p class='a'>⠀⠀⣀⡠⠴⠒⠉⠉⠀⢀⣀⣀⠤⡤⢶⣶⣋⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀</p>
-    <p class='a'>⣖⣉⣁⣠⠤⠶⡶⡶⢍⡉⠀⠀⠀⠙⠒⠯⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    <p class='a'>⠁⠀⠀⠀⠀⠑⢦⣯⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-    """
-
-    st.markdown(ascii_art, unsafe_allow_html=True)
+taba.image("./images/Fearless - 2.png")
 
 
 # Kullanıcı Input Girişleri Ekran Tasarımı

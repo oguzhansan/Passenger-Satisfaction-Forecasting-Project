@@ -14,11 +14,14 @@ show_pages(
     ]
 )
 
+st.sidebar.markdown("<br><br><br><br><br><br><br>"
+                    "<br><br><br><br><br><br><br>"
+                    "<br><br><br><br><br><br>", unsafe_allow_html=True)
 
-st.sidebar.image("./images/homepage.png")
+st.sidebar.image("./images/b7.png")
 
 # Background Resminin Ayarlanması
-img = get_img_as_base64("./images/background.jpg")
+img = get_img_as_base64("./images/Fearless - 7.jpeg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -29,7 +32,7 @@ background-repeat: no-repeat;
 background-attachment: local;
 }}
 [data-testid="stHeader"]
-{{background: rgba(38, 38, 54, 0.3);}}
+{{background: rgba(56,97,142,0.3);}}
 {{[data-testid="stVerticalBlockBorderWrapper"]
 {{background-color: rgba(38, 38, 54, 0.3); border-radius: 16px;}}
 .st-ds 
@@ -76,13 +79,9 @@ st.markdown("""
 
     </style>
 """, unsafe_allow_html=True)
-st.markdown("<h1 class='title'> Miuul Airlines R&D </h1>", unsafe_allow_html=True)
 
 # Ana Ekran Giriş Sayfası
-st.image("./images/a2.png")
-st.markdown("<p class='me'>Miuul Airlines</p>", unsafe_allow_html=True)
-st.markdown("<p class='me'>Passenger Satisfaction Forecasting System</p>", unsafe_allow_html=True)
-st.markdown("<p class='me'>1.3.0</p>", unsafe_allow_html=True)
+st.image("./images/Fearless - 3.png")
 
 # Sayfa Footer HTML Kod Uygulaması
 with open("style/footer.html", "r", encoding="utf-8") as pred:
