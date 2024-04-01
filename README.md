@@ -136,7 +136,7 @@
 
 <h2>  📺Project Presentation:  </h2>
 
-![Video Açıklaması](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/point.mp4)
+![Video Açıklaması](https://www.youtube.com/watch?v=-EAFrqBwJ0k)
 
   
 
