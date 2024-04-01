@@ -136,7 +136,7 @@
 
 <h2>  📺Project Presentation:  </h2>
 
-![Video Açıklaması](https://www.youtube.com/watch?v=-EAFrqBwJ0k)
+[![Video Açıklaması](https://www.youtube.com/watch?v=-EAFrqBwJ0k)]
 
   
 
