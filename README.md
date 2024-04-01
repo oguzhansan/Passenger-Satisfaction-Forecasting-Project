@@ -136,5 +136,4 @@
 
 <h2>  📺Project Presentation:  </h2>
 
-[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
-
+https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/assets/151533766/d0b0e69a-622c-4b68-ad30-f5804489a04b
