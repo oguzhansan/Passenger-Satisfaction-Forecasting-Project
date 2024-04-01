@@ -138,5 +138,5 @@
 
 [![Video Açıklaması](https://www.youtube.com/watch?v=-EAFrqBwJ0k)]
 
-  
+[![Video Açıklaması](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=-EAFrqBwJ0k)
 
