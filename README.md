@@ -98,7 +98,7 @@
 ![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen6.png) 
 
 
-<p></p> <a> In the table below you will find the predictions made for each row of your data set. </a> 
+<p></p> <a> In the table below you will find the predictions made for each row of your data set. If you wish, you can download the relevant predictions. </a> 
 
 ![image](https://github.com/oguzhansan/Passenger-Satisfaction-Forecasting-Project/blob/main/images/screen7.png) 
 
